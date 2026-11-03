@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vim, questionei, decifrei e libertei-me.</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400&display=swap">
+<style>
+:root{--bg:#070304;--ink:#e9d8cf;--dim:#a08a82;--blood:#c1121f;--line:#3a1216;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#070304;--ink:#e9d8cf;--dim:#a08a82;--blood:#c1121f;--line:#3a1216}}
+:root[data-theme="dark"]{--bg:#070304;--ink:#e9d8cf;--dim:#a08a82;--blood:#c1121f;--line:#3a1216}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Cormorant Garamond",Georgia,serif;font-size:1.25rem;line-height:1.65}
+.hero{position:relative}
+.hero img{display:block;width:100%;height:auto;min-height:260px;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:auto 0 0 0;height:30%;background:linear-gradient(transparent,var(--bg))}
+main{max-width:40rem;margin:0 auto;padding:3rem 1.25rem 5rem}
+h1{font-weight:400;font-style:italic;font-size:clamp(1.9rem,5vw,2.8rem);line-height:1.2;margin:0 0 1.5rem}
+h2{font-weight:600;font-size:1.5rem;margin:3.5rem 0 1rem}
+p{margin:0 0 1.2rem}
+.mono{font-family:"IBM Plex Mono",ui-monospace,Consolas,monospace;font-size:.85rem;color:var(--dim);letter-spacing:.04em}
+ol{list-style:none;padding:0;margin:0;border-left:1px solid var(--line)}
+li{padding:0 0 1.6rem 1.5rem;position:relative}
+li::before{content:"";position:absolute;left:-5px;top:.7rem;width:9px;height:9px;border-radius:50%;background:var(--blood)}
+li b{display:block;font-weight:600}
+.parallel{border-top:1px solid var(--line);margin-top:3rem;padding-top:1rem}
+.gate{margin-top:3rem;padding:1.5rem;border:1px solid var(--blood);text-align:center}
+.gate .mono{color:var(--ink)}
+a{color:var(--blood)}
+a:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+.paradox{margin-top:1rem}.laugh{font-style:italic;color:var(--blood);font-size:1.5rem;margin:2rem 0}.creed{list-style:none;padding:0;margin:0 0 1.5rem;border-left:2px solid var(--blood)}.creed li{padding:.2rem 0 .2rem 1.2rem;font-style:italic}.creed li::before{display:none}.cipher{font-family:"IBM Plex Mono",ui-monospace,Consolas,monospace;font-size:1.05rem;line-height:1.8;word-break:break-word;margin:0;color:var(--ink)}.rabbit{text-align:center;font-size:1.5rem;margin-top:2.5rem}.blink{animation:b 1.2s steps(2) infinite}
+@keyframes b{50%{opacity:0}}
+@media (prefers-reduced-motion:reduce){.paradox{margin-top:1rem}.laugh{font-style:italic;color:var(--blood);font-size:1.5rem;margin:2rem 0}.creed{list-style:none;padding:0;margin:0 0 1.5rem;border-left:2px solid var(--blood)}.creed li{padding:.2rem 0 .2rem 1.2rem;font-style:italic}.creed li::before{display:none}.cipher{font-family:"IBM Plex Mono",ui-monospace,Consolas,monospace;font-size:1.05rem;line-height:1.8;word-break:break-word;margin:0;color:var(--ink)}.rabbit{text-align:center;font-size:1.5rem;margin-top:2.5rem}.blink{animation:none}}
+</style>
+</head>
+<body>
+<header class="hero"><img src="rabbit_com_metadados.png" alt="Um coelho branco de óculos e capa escura, diante de ruínas de aquedutos sob um sol vermelho. Legenda: Vim, questionei, decifrei e libertei-me."></header>
+<main>
+<h1>Quem vai ficar com a verdade, quando a verdade for apagada?</h1>
+<p>Este não é um site comum. É um convite, feito apenas a quem acredita ter a inteligência para o aceitar.</p>
+
+<h2>A história dele</h2>
+<p>Para perceber o que defendemos, é preciso conhecer o Coelho. A sua história é trágica.</p>
+<ol>
+<li><b>Infância difícil</b>Era órfão e vivia com uma família adotiva abusiva.</li>
+<li><b>Chegada a Makai</b>Encontrou um portal e entrou no mundo dos demónios.</li>
+<li><b>Nova família</b>Foi acolhido por demónios de baixo nível, que passaram a ser a sua verdadeira família.</li>
+<li><b>Tentativa de salvação</b>Construiu um mecanismo para transportar os demónios de Makai para o mundo humano.</li>
+<li><b>Massacre</b>Quando atravessaram o portal, as forças da DARKCOM atacaram e mataram a sua família e amigos.</li>
+<li><b>Nascimento do vilão</b>Sobreviveu, mas ficou traumatizado e passou a procurar vingança contra os humanos, especialmente a DARKCOM e Mary.</li>
+</ol>
+
+<div class="parallel">
+<h2>O que isto tem a ver connosco</h2>
+<p>O que ele sofreu assemelha-se ao que os cypherpunks sofrem no contexto digital: quem constrói uma saída para os outros, em nome da liberdade e da privacidade, é muitas vezes perseguido por quem controla a porta.</p>
+<p>Por isso criámos estes desafios. São apenas para quem acha que é inteligente e quer abraçar este movimento.</p>
+</div>
+
+<section class="paradox">
+<h2>🐇 The Rabbit’s Paradox</h2>
+<p class="mono">Uma mensagem para aqueles que ainda ousam procurar.</p>
+<p class="laugh">HAHAHAHA...!</p>
+<p>Então chegaste até aqui?</p>
+<p>Que criatura curiosa... Atravessaste o espelho, seguiste os símbolos e agora acreditas que encontraste a saída?</p>
+<p>Pobre criatura. A saída nunca esteve escondida. Foi a tua percepção que permaneceu aprisionada.</p>
+<p>Olha para os antigos glifos. Eles não representam apenas aquilo que os olhos conseguem reconhecer. Representam ciclos, mortes e renascimentos. Toda a forma pode ser desfeita. Toda a estrutura pode ser transformada.</p>
+<p>Agora, pequeno viajante, observa as dimensões deste cárcere.</p>
+<p>O horizonte revela a sua extensão; a sua companheira revela a sua proporção. Divide a ambição do maior pela simplicidade do menor. O resultado não é uma resposta... É a chave que procuravas.</p>
+<p>Seis passos para a metamorfose. Seis movimentos contra a ordem estabelecida.</p>
+<p>Mas não te atrevas a caminhar para a frente!</p>
+<p>Aquilo que foi deslocado deve percorrer o caminho inverso. Uma letra de cada vez. Um símbolo de cada vez. Até que o alfabeto volte a confessar aquilo que tentou esconder.</p>
+<p class="laugh">HAHAHAHA...!</p>
+<p>Os governos temem aquilo que não conseguem vigiar. Os impérios temem aquilo que não conseguem controlar.</p>
+<p>E os ingénuos acreditam que privacidade é um privilégio.</p>
+<p>Nós sabemos melhor.</p>
+<ul class="creed">
+<li>A informação quer ser livre.</li>
+<li>A criptografia não pede licença.</li>
+<li>A privacidade não é um crime.</li>
+<li>Don’t trust. Verify.</li>
+</ul>
+<p>Agora decifra a mensagem, se tiveres coragem.</p>
+<div class="gate"><p class="cipher">«U iutnkiosktzu rohkxzg; g ixovzumxglog vxuzkmk uy robxky.»</p></div>
+<p class="rabbit">Follow the White Rabbit. 🐇<span class="blink"> _</span></p>
+</section>
+</main>
+</body>
+</html>
